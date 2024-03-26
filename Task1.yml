@@ -1,0 +1,11 @@
+----//for 1 pod with 1 container with the image of ubuntu//---
+
+kind: pod
+apiVersion: v1
+metadata:
+  name: jspiders
+spec:
+  containers:
+    - name: jspiders
+      image: ubuntu
+      command: ["/bin/bash", "-c", "while true; do echo hi everyone; sleep 5; done"]
