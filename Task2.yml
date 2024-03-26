@@ -1,0 +1,11 @@
+----//create 1 pod with image nginx and assign port no 80//-----
+apiVersion: v1
+kind: Pod
+metadata:
+  name: flipkart
+spec:
+  containers:
+    - name: login
+      image: nginx
+      ports:
+        - containerPort: 80
