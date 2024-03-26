@@ -1,0 +1,14 @@
+----//create a task with labels(used to find the individual containers by label name)//----
+
+apiVersion: v1
+kind: Pod
+metadata:
+  name: jspiders
+  labels:
+    department: DevOps
+    batch: sak
+spec: 
+  containers:
+    - name: demo
+      image: ubuntu
+      command: ["/bin/bash", "-c", "while true; do echo hi everyone; sleep 5; done"]
